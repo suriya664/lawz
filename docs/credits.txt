@@ -1,0 +1,159 @@
+===============================================================================
+                            LAWFIRM PRO - CREDITS
+                  Third-Party Libraries and Resources
+===============================================================================
+
+THIRD-PARTY LIBRARIES
+===============================================================================
+
+jQuery
+------
+Library: jQuery JavaScript Library
+Version: 3.6.0
+License: MIT License
+Website: https://jquery.com
+Author: jQuery Foundation and contributors
+Usage: DOM manipulation, AJAX, event handling
+
+Bootstrap
+---------
+Framework: Bootstrap
+Version: 5.3.0
+License: MIT License
+Website: https://getbootstrap.com
+Author: Bootstrap Team
+Usage: Responsive grid system, components, utilities
+
+Font Awesome
+------------
+Library: Font Awesome Icons
+Version: 6.4.0
+License: Font Awesome Free License
+Website: https://fontawesome.com
+Author: Fonticons, Inc.
+Usage: Icon fonts throughout the template
+
+AOS (Animate On Scroll)
+-----------------------
+Library: AOS - Animate On Scroll Library
+Version: 2.3.1
+License: MIT License
+Website: https://michalsnik.github.io/aos
+Author: Michał Sajnóg
+Usage: Scroll animations for page elements
+
+Google Fonts
+------------
+Service: Google Fonts
+Fonts Used:
+  - Playfair Display (Headings)
+  - Roboto (Body text)
+License: Open Font License
+Website: https://fonts.google.com
+Provider: Google LLC
+Usage: Typography throughout the template
+
+IMAGE RESOURCES
+===============================================================================
+
+Pexels
+------
+Service: Pexels - Free Stock Photos
+Website: https://www.pexels.com
+License: Free to use, no attribution required (but appreciated)
+Usage: Placeholder images throughout the template
+
+Note: All images used in this template are from Pexels and are free
+to use for commercial and personal purposes. We recommend replacing
+these with your own professional images for production use.
+
+SPECIFIC PEXELS IMAGES USED:
+- Law office photos
+- Professional portraits (attorneys)
+- Legal documents and scales of justice
+- Business meeting photos
+- Real estate images
+- Workplace images
+
+TECHNICAL RESOURCES
+===============================================================================
+
+CSS Variables (Custom Properties)
+----------------------------------
+Standard: CSS Custom Properties (CSS Variables)
+Specification: W3C CSS Custom Properties
+Usage: Theming, color management, responsive values
+
+HTML5 Semantic Elements
+-----------------------
+Standard: HTML5
+Specification: W3C HTML5 Specification
+Usage: Semantic markup, accessibility
+
+JavaScript ES6+
+---------------
+Standard: ECMAScript 2015 (ES6) and later
+Specification: ECMA International
+Usage: Modern JavaScript features, arrow functions, const/let
+
+DOCUMENTATION & LEARNING RESOURCES
+===============================================================================
+
+Bootstrap Documentation
+-----------------------
+Website: https://getbootstrap.com/docs
+Reference for: Grid system, components, utilities
+
+jQuery API Documentation
+------------------------
+Website: https://api.jquery.com
+Reference for: jQuery methods and AJAX functions
+
+Mozilla Developer Network (MDN)
+-------------------------------
+Website: https://developer.mozilla.org
+Reference for: HTML, CSS, JavaScript standards
+
+W3Schools
+---------
+Website: https://www.w3schools.com
+Reference for: HTML, CSS, JavaScript tutorials
+
+SPECIAL THANKS
+===============================================================================
+
+We would like to thank:
+
+- The open-source community for providing excellent tools and libraries
+- All contributors to the projects mentioned above
+- Pexels photographers for providing free stock images
+- The web development community for sharing knowledge and best practices
+
+ATTRIBUTION REQUIREMENTS
+===============================================================================
+
+While most libraries used are open-source and don't require attribution
+in the final product, we recommend:
+
+1. Keeping Bootstrap and jQuery comments in minified files (if applicable)
+2. Attributing Font Awesome if using the free version (optional)
+3. Crediting image sources if required by the specific image license
+
+For commercial projects, please review each library's license terms.
+
+LICENSE SUMMARY
+===============================================================================
+
+All third-party libraries used in this template are licensed under
+permissive open-source licenses (primarily MIT License), allowing
+commercial and personal use without restrictions.
+
+Individual licenses can be found:
+- jQuery: https://github.com/jquery/jquery/blob/main/LICENSE.txt
+- Bootstrap: https://github.com/twbs/bootstrap/blob/main/LICENSE
+- AOS: https://github.com/michalsnik/aos/blob/master/LICENSE
+- Font Awesome: https://fontawesome.com/license/free
+
+===============================================================================
+END OF CREDITS
+===============================================================================

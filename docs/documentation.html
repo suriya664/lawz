@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - LawFirm Pro Template</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 40px; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #1a4d8c; 
+            border-bottom: 3px solid #d4af37; 
+            padding-bottom: 10px; 
+            margin-bottom: 30px;
+        }
+        h2 { 
+            color: #1a4d8c; 
+            margin-top: 40px; 
+            margin-bottom: 20px; 
+            border-left: 4px solid #d4af37;
+            padding-left: 15px;
+        }
+        h3 { 
+            color: #333; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+        }
+        p { margin-bottom: 15px; }
+        ul, ol { margin-left: 30px; margin-bottom: 20px; }
+        li { margin-bottom: 8px; }
+        code { 
+            background: #f4f4f4; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+        pre { 
+            background: #f4f4f4; 
+            padding: 15px; 
+            border-radius: 5px; 
+            overflow-x: auto; 
+            margin-bottom: 20px;
+            border-left: 4px solid #1a4d8c;
+        }
+        pre code { background: none; padding: 0; color: #333; }
+        .highlight { background: #fff3cd; padding: 2px 6px; }
+        .warning { background: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; margin: 20px 0; }
+        .info { background: #d1ecf1; padding: 15px; border-left: 4px solid #0c5460; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #1a4d8c; color: white; }
+        tr:hover { background: #f5f5f5; }
+        .toc { background: #f8f9fa; padding: 20px; border-radius: 5px; margin-bottom: 30px; }
+        .toc ul { list-style: none; margin-left: 0; }
+        .toc a { color: #1a4d8c; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LawFirm Pro - Complete Documentation</h1>
+        
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#getting-started">2. Getting Started</a></li>
+                <li><a href="#file-structure">3. File Structure</a></li>
+                <li><a href="#customization">4. Customization Guide</a></li>
+                <li><a href="#pages">5. Pages Overview</a></li>
+                <li><a href="#components">6. Components</a></li>
+                <li><a href="#javascript">7. JavaScript Functions</a></li>
+                <li><a href="#css">8. CSS Customization</a></li>
+                <li><a href="#troubleshooting">9. Troubleshooting</a></li>
+            </ul>
+        </div>
+
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>LawFirm Pro is a professional, fully responsive HTML template designed for law firms and legal service providers. Built with modern web technologies, it provides a clean, professional design that helps establish credibility and trust.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li>Fully responsive design (mobile, tablet, desktop)</li>
+                <li>14 complete HTML pages</li>
+                <li>Dark mode support</li>
+                <li>Modern animations</li>
+                <li>SEO optimized</li>
+                <li>Cross-browser compatible</li>
+                <li>Easy to customize</li>
+            </ul>
+        </section>
+
+        <section id="getting-started">
+            <h2>2. Getting Started</h2>
+            
+            <h3>Installation</h3>
+            <ol>
+                <li>Extract all files from the ZIP archive</li>
+                <li>Maintain the folder structure as provided</li>
+                <li>Open <code>pages/index.html</code> in your browser</li>
+            </ol>
+
+            <div class="warning">
+                <strong>Important:</strong> For best results, use a local server. jQuery's <code>.load()</code> method requires a server environment to load partials properly.
+            </div>
+
+            <h3>Running a Local Server</h3>
+            
+            <h4>Option 1: Python</h4>
+            <pre><code>cd lawfirm-template
+python -m http.server 8000
+# Open: http://localhost:8000/pages/index.html</code></pre>
+
+            <h4>Option 2: Node.js (http-server)</h4>
+            <pre><code>npm install -g http-server
+cd lawfirm-template
+http-server
+# Open the provided URL</code></pre>
+
+            <h4>Option 3: PHP</h4>
+            <pre><code>cd lawfirm-template
+php -S localhost:8000
+# Open: http://localhost:8000/pages/index.html</code></pre>
+        </section>
+
+        <section id="file-structure">
+            <h2>3. File Structure</h2>
+            <pre><code>lawfirm-template/
+├── assets/
+│   ├── css/
+│   │   ├── style.css           Main stylesheet
+│   │   ├── responsive.css      Media queries
+│   │   ├── dark.css            Dark mode styles
+│   │   └── animations.css      Animations
+│   ├── js/
+│   │   ├── main.js             Core JavaScript
+│   │   ├── ajax.js             AJAX utilities
+│   │   └── plugins.js          Plugin init
+│   └── images/                 Your images
+├── pages/                      All HTML pages
+├── partials/                   Reusable components
+├── docs/                       Documentation
+└── README.txt                  Project README</code></pre>
+        </section>
+
+        <section id="customization">
+            <h2>4. Customization Guide</h2>
+            
+            <h3>Changing Colors</h3>
+            <p>Edit CSS variables in <code>assets/css/style.css</code>:</p>
+            <pre><code>:root {
+    --primary-color: #1a4d8c;      /* Main brand color */
+    --secondary-color: #d4af37;    /* Accent color */
+    --dark-color: #1a1a1a;         /* Dark text */
+    --light-color: #f8f9fa;        /* Light background */
+}</code></pre>
+
+            <h3>Changing Fonts</h3>
+            <p>Update the Google Fonts link in HTML files:</p>
+            <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Your+Font&display=swap" rel="stylesheet"&gt;</code></pre>
+            <p>Then update <code>font-family</code> in CSS variables.</p>
+
+            <h3>Replacing Images</h3>
+            <ol>
+                <li>Add your images to <code>assets/images/</code></li>
+                <li>Update image paths in HTML files</li>
+                <li>Replace Pexels URLs with your image paths</li>
+            </ol>
+
+            <h3>Updating Contact Information</h3>
+            <p>Edit contact details in:</p>
+            <ul>
+                <li><code>partials/footer.html</code></li>
+                <li><code>pages/contact.html</code></li>
+            </ul>
+        </section>
+
+        <section id="pages">
+            <h2>5. Pages Overview</h2>
+            
+            <table>
+                <tr>
+                    <th>Page</th>
+                    <th>File</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Homepage</td>
+                    <td>index.html</td>
+                    <td>Main landing page with hero, practice areas, testimonials</td>
+                </tr>
+                <tr>
+                    <td>About Us</td>
+                    <td>about.html</td>
+                    <td>Company story, mission, vision, values</td>
+                </tr>
+                <tr>
+                    <td>Practice Areas</td>
+                    <td>practice-areas.html</td>
+                    <td>Detailed information about legal services</td>
+                </tr>
+                <tr>
+                    <td>Attorneys</td>
+                    <td>attorneys.html</td>
+                    <td>Team member profiles</td>
+                </tr>
+                <tr>
+                    <td>Case Studies</td>
+                    <td>case-studies.html</td>
+                    <td>Showcase of successful cases</td>
+                </tr>
+                <tr>
+                    <td>Blog</td>
+                    <td>blog.html</td>
+                    <td>Blog post listing</td>
+                </tr>
+                <tr>
+                    <td>Blog Detail</td>
+                    <td>blog-details.html</td>
+                    <td>Individual blog post page</td>
+                </tr>
+                <tr>
+                    <td>FAQ</td>
+                    <td>faq.html</td>
+                    <td>Frequently asked questions</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>contact.html</td>
+                    <td>Contact form and information</td>
+                </tr>
+                <tr>
+                    <td>Login</td>
+                    <td>login.html</td>
+                    <td>User login page</td>
+                </tr>
+                <tr>
+                    <td>Register</td>
+                    <td>register.html</td>
+                    <td>User registration page</td>
+                </tr>
+                <tr>
+                    <td>404 Error</td>
+                    <td>404.html</td>
+                    <td>Custom error page</td>
+                </tr>
+                <tr>
+                    <td>Privacy Policy</td>
+                    <td>privacy-policy.html</td>
+                    <td>Privacy policy page</td>
+                </tr>
+                <tr>
+                    <td>Terms</td>
+                    <td>terms.html</td>
+                    <td>Terms of service page</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="components">
+            <h2>6. Components</h2>
+            
+            <h3>Header (partials/header.html)</h3>
+            <p>Contains logo, navigation menu, and mobile toggle. Loaded dynamically on all pages.</p>
+
+            <h3>Footer (partials/footer.html)</h3>
+            <p>Contains company info, links, contact details, and social media. Loaded dynamically.</p>
+
+            <h3>Preloader (partials/preloader.html)</h3>
+            <p>Loading animation shown while page loads. Automatically hides when ready.</p>
+
+            <h3>Sidebar (partials/sidebar.html)</h3>
+            <p>Contains practice area widgets and contact CTA. Used on blog pages.</p>
+
+            <h3>Modals (partials/modals.html)</h3>
+            <p>Contact and appointment scheduling modals. Can be triggered from any page.</p>
+        </section>
+
+        <section id="javascript">
+            <h2>7. JavaScript Functions</h2>
+            
+            <h3>Main Functions (main.js)</h3>
+            <ul>
+                <li><strong>Mobile Menu Toggle:</strong> Toggles navigation on mobile devices</li>
+                <li><strong>Smooth Scrolling:</strong> Smooth scroll to anchor links</li>
+                <li><strong>Active Navigation:</strong> Highlights current page in navigation</li>
+                <li><strong>Header Scroll Effect:</strong> Changes header on scroll</li>
+                <li><strong>Preloader:</strong> Hides preloader when page loads</li>
+                <li><strong>Scroll to Top:</strong> Button to scroll back to top</li>
+                <li><strong>Form Validation:</strong> Client-side form validation</li>
+                <li><strong>Counter Animation:</strong> Animated number counters</li>
+                <li><strong>Testimonial Slider:</strong> Simple testimonial carousel</li>
+                <li><strong>FAQ Accordion:</strong> Expandable FAQ items</li>
+                <li><strong>Dark Mode:</strong> Theme toggle with localStorage</li>
+                <li><strong>Lazy Loading:</strong> Lazy load images for performance</li>
+            </ul>
+
+            <h3>AJAX Functions (ajax.js)</h3>
+            <ul>
+                <li><strong>submitForm():</strong> Generic form submission handler</li>
+                <li><strong>loadContent():</strong> Load content via AJAX</li>
+            </ul>
+
+            <h3>Plugin Initialization (plugins.js)</h3>
+            <ul>
+                <li><strong>AOS:</strong> Animate On Scroll library initialization</li>
+                <li>Other plugin initializations as needed</li>
+            </ul>
+        </section>
+
+        <section id="css">
+            <h2>8. CSS Customization</h2>
+            
+            <h3>CSS Variables</h3>
+            <p>All colors, spacing, and typography use CSS variables for easy theming:</p>
+            <pre><code>:root {
+    /* Colors */
+    --primary-color: #1a4d8c;
+    --secondary-color: #d4af37;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    
+    /* Typography */
+    --font-size-base: 16px;
+    --font-size-h1: 2.5rem;
+}</code></pre>
+
+            <h3>Responsive Breakpoints</h3>
+            <p>Defined in <code>responsive.css</code>:</p>
+            <ul>
+                <li>Mobile: up to 767px</li>
+                <li>Tablet: 768px - 991px</li>
+                <li>Desktop: 992px and above</li>
+            </ul>
+
+            <h3>Dark Mode</h3>
+            <p>Dark mode styles are in <code>dark.css</code>. Activated via <code>data-theme="dark"</code> attribute on <code>&lt;html&gt;</code> tag.</p>
+        </section>
+
+        <section id="troubleshooting">
+            <h2>9. Troubleshooting</h2>
+            
+            <h3>Partials Not Loading</h3>
+            <div class="warning">
+                <strong>Issue:</strong> Header, footer, or other partials not appearing.<br>
+                <strong>Solution:</strong> Use a local server. jQuery's <code>.load()</code> requires a server environment.
+            </div>
+
+            <h3>Images Not Displaying</h3>
+            <div class="info">
+                <strong>Issue:</strong> Images not showing up.<br>
+                <strong>Solution:</strong> Check image paths. Ensure images are in the correct folder or URLs are valid.
+            </div>
+
+            <h3>Styles Not Applying</h3>
+            <ul>
+                <li>Check that CSS files are linked correctly</li>
+                <li>Clear browser cache</li>
+                <li>Check browser console for errors</li>
+            </ul>
+
+            <h3>JavaScript Not Working</h3>
+            <ul>
+                <li>Ensure jQuery is loaded before custom scripts</li>
+                <li>Check browser console for errors</li>
+                <li>Verify all script paths are correct</li>
+            </ul>
+
+            <h3>Forms Not Submitting</h3>
+            <div class="info">
+                <strong>Note:</strong> Forms use simulated AJAX submission. To make them functional, integrate with your backend API.
+            </div>
+        </section>
+
+        <div style="margin-top: 50px; padding-top: 20px; border-top: 2px solid #ddd; text-align: center; color: #666;">
+            <p>LawFirm Pro Template Documentation</p>
+            <p>Version 1.0.0 | January 2024</p>
+        </div>
+    </div>
+</body>
+</html>
